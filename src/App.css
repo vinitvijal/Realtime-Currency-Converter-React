@@ -1,38 +1,92 @@
-.App {
+.mainBox {
+  width: 100vw;
+  height: 100vh;
+  background: #A1C298;
+}
+
+header {
+  background: #C6EBC5;
+  box-shadow: 0px -40px 10px black;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header h1 {
+  color: #181818;
+  text-shadow: 1px 1px 10px rgb(124, 124, 124);
+  font-size: 3vw;
+
+}
+
+.Conversion{
+  width: 100vw;
+  height: 70vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  height: 40vh;
+  width: 50vh;
+
+}
+
+
+
+.inputBox input {
+  background: #FBF2CF;
+  outline: none;
+  font-size: 7vh;
+  font-weight: 900;
+  text-align: center;
+  height: 60%;
+  width: 90% ;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 10px #C6EBC5;
+  border-radius: 5px;
+
+}
+
+.inputBox select {
+  width: 90% ;
+  height: 20%;
+  font-size: 3vh;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+footer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h4 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 730px) {
+  .Conversion {
+    flex-direction: column;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  header h1 {
+    font-size: 5vw;
   }
 }
